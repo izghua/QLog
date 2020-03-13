@@ -1,3 +1,3 @@
-module github.com/Penglq/QLog
+module github.com/izghua/QLog
 
 go 1.13
