@@ -60,6 +60,8 @@ type logger struct {
 	outFile    io.Writer
 	outConsole io.Writer
 	_date      *time.Time
+
+	traceId string
 }
 
 func init() {
@@ -151,6 +153,12 @@ func WithcallDepOPT(cDep int) ConfigOption {
 		} else {
 			l.callDep = cDep
 		}
+	}
+}
+
+func WithTraceId(traceId string) ConfigOption {
+	return func(l *logger) {
+		l.traceId = traceId
 	}
 }
 
