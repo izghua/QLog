@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/Penglq/QLog"
+	"github.com/izghua/QLog"
 	"testing"
 )
 
